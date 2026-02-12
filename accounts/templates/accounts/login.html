@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="login-wrapper">
+
+    <div class="logo-circle">
+        🌡
+    </div>
+
+    <h1>Classroom Heat Monitor</h1>
+    <p class="subtitle">Real-time temperature monitoring system</p>
+
+    <div class="login-card">
+
+        <div class="tab-buttons">
+            <button class="active">Login</button>
+            <button disabled>Sign up</button>
+        </div>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <label>Email</label>
+            {{ form.username }}
+
+            <label>Password</label>
+            {{ form.password }}
+
+            <div class="role-buttons">
+                <button type="submit" name="role" value="student" class="role-btn active">Student</button>
+                <button type="submit" name="role" value="instructor" class="role-btn">Instructor</button>
+            </div>
+
+            <button type="submit" name="role" value="facilities" class="facilities-btn">
+                Facilities (Desktop Only)
+            </button>
+
+            <button type="submit" class="login-btn">Login</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

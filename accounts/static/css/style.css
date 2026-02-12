@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #d8c9c1;
+    margin: 0;
+    padding: 0;
+}
+
+.login-wrapper {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    background: #ff5a00;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.login-card {
+    background: #f2f2f2;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #ddd;
+    margin: 0 5px;
+}
+
+.tab-buttons .active {
+    background: #ff5a00;
+    color: white;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.role-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.role-btn {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    background: #ddd;
+}
+
+.role-btn.active {
+    background: #ff5a00;
+    color: white;
+}
+
+.facilities-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ff5a00;
+    background: linear-gradient(to right, #ff5a00, #ffa65c);
+    color: white;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #ff5a00;
+    color: white;
+    font-size: 16px;
+}
