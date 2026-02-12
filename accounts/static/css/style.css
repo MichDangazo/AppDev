@@ -46,16 +46,16 @@ h1 {
 .tab-buttons {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .tab-buttons button {
     flex: 1;
     padding: 10px;
-    border: none;
+    margin: 5px;
     border-radius: 8px;
+    border: none;
     background: #ddd;
-    margin: 0 5px;
 }
 
 .tab-buttons .active {

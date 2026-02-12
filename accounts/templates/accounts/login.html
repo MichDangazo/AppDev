@@ -14,7 +14,9 @@
 
         <div class="tab-buttons">
             <button class="active">Login</button>
-            <button disabled>Sign up</button>
+            <a href="{% url 'accounts:signup' %}">
+                <button type="button">Sign up</button>
+            </a>
         </div>
 
         <form method="post">

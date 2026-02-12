@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="login-wrapper">
+
+    <div class="logo-circle">
+        🌡
+    </div>
+
+    <h1>Create Account</h1>
+    <p class="subtitle">Register for Classroom Heat Monitor</p>
+
+    <div class="login-card">
+
+        <div class="tab-buttons">
+            <a href="{% url 'accounts:login' %}">
+                <button type="button">Login</button>
+            </a>
+            <button class="active">Sign up</button>
+        </div>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <label>Username</label>
+            {{ form.username }}
+
+            <label>Email</label>
+            {{ form.email }}
+
+            <label>Role</label>
+            {{ form.user_type }}
+
+            <label>Password</label>
+            {{ form.password1 }}
+
+            <label>Confirm Password</label>
+            {{ form.password2 }}
+
+            <button type="submit" class="login-btn">
+                Sign Up
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}
